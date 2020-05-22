@@ -1,0 +1,215 @@
+html{
+  scroll-behaviour: smooth;
+}
+
+#contact-region{
+  background-color: grey;
+}
+
+@media (min-width: 500px){
+  #home-section{
+    background-color: black;
+    background-position: center;
+    background-image: url(/static/bravo.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 1000px;
+    }
+
+  .home-banner{
+    color: black;
+    text-align: center;
+    font-size: 48pt;
+    padding-top:5%;
+    white-space: nowrap;
+    }
+
+  #about{
+    background-color: black;
+    color: white;
+    height: 1000px;
+    text-align: center;}
+
+  #programs{
+  padding: 10px;
+  text-align: center;
+}
+
+    .login{
+    float: left;
+    width: 25%;
+    height: 5%;
+    font-size: 14pt;
+    font-weight: bold;
+    background: rgba(0,0,0, 0.1);
+    border-radius: 5px;
+    border: solid;
+    border-color: black;
+    margin-left: 20%;
+    margin-top: 19%;
+    }
+
+    .register{
+    width: 25%;
+    height: 5%;
+    font-size: 14pt;
+    font-weight: bold;
+    margin-left: 5%;
+    margin-top: 19%;
+    border-radius: 5px;
+    border: solid;
+    color:black;
+    border-color: black;
+    background: rgba(0,0,0, 0.1);
+    }
+
+    .sub-banner{
+        color: black;
+        text-align: center;
+        font-size: 32pt;
+    }
+
+}
+
+@media (max-width: 499px){
+  #home-section{
+  background-image: url(/static/bravo.jpg);
+  background-color: black;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: auto;
+
+  }
+
+  .home-banner{
+    font-size: 36pt;
+    color: white;
+    text-align: center;
+  }
+
+  #about{
+    background-color: black;
+    color: white;
+    height: auto;
+  }
+
+  #programs{
+  height: auto;
+  text-align: center;
+}
+
+  .login{
+    float: left;
+    width: 25%;
+    height: 5%;
+    font-size: 14pt;
+    font-weight: bold;
+    background: rgba(0,0,0, 0.1);
+    border-radius: 5px;
+    border: solid;
+    border-color: white;
+    color: white;
+    margin-left: 20%;
+    margin-top: 10%;
+    }
+
+    .register{
+    width: 25%;
+    height: 5%;
+    font-size: 14pt;
+    font-weight: bold;
+    margin-left: 5%;
+    margin-top: 10%;
+    border-radius: 5px;
+    border: solid;
+    color:white;
+    border-color: white;
+    background: rgba(0,0,0, 0.1);
+    }
+
+
+    .sub-banner{
+        color: white;
+        text-align: center;
+        font-size: 24pt;
+     }
+}
+
+#about{
+    padding: 10%;
+}
+
+#programs{
+    padding: 5%;
+    background-image: url(/static/alpha.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.nav-link{
+  color: white;
+}
+
+.program-title{
+  color: white;
+}
+
+.card{
+  margin-left: 5%;
+}
+
+#schedule{
+  padding-left: 10%;
+  padding-top: 5%;
+  padding-bottom: 5%;
+  background-color: black;
+}
+
+.contact{
+  margin-top: 3%;
+  text-align: center;
+  background-color: grey;
+  color:green;
+}
+
+.location{
+  margin-left: 8.3%;
+  margin-top: 3%;
+  background-color: grey;
+  color: greenyellow;
+}
+
+.form-field{
+  width: 75%;
+}
+
+textarea{
+  width: 75%;
+}
+
+.footer{
+  background-color:black;
+  height: 300px;
+}
+
+#pic{
+  float:right;
+  width: 20%;
+  margin-right: 5%;
+}
+
+.sticky{
+  position: fixed;
+  top: 0px;
+}
+
+.registration{
+    background-color: blue;
+    color: white;
+}
+
+.login-alt{
+    background-color: blue;
+    color: white;
+}

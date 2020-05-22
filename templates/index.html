@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=yes">
+
+    <link href="/static/index.css" rel="stylesheet">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" rel="stylesheet">
+
+    <script src="https://kit.fontawesome.com/852180227d.js" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+
+
+
+    <title>RSS Discovery</title>
+</head>
+<body>
+
+    <nav class="navbar sticky-top navbar-expand-lg navbar-dark bg-dark" id="navbar">
+      <a class="navbar-brand" href="#">
+        <img src="#" width="30" height="30" class="d-inline-block align-top" alt="">
+        RSS Discovery
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" href="#home-section">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#about">What is RSS?</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#programs">How to Use This App</a>
+          </li>
+         <!-- <li class="nav-item">
+            <a class="nav-link" href="#schedule">Schedule</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#contact">Contact Us</a>
+          </li>-->
+        </ul>
+      </div>
+    </nav>
+
+    <div id="home-section">
+      <h1 class="home-banner">RSS Discovery</h1>
+      <h3 class="sub-banner">Read the News you Care About</h3>
+      <a href="/login">
+          <button class="login" id="login" type="submit">Login</button>
+      </a>
+      <a href="/register">
+          <button class="register" id="register" type="submit">Sign Up</button>
+      </a>
+    </div>
+
+    <div id="about">
+      <h4>What is RSS?</h4>
+      <p>RSS stands for Really Simple Syndication and it is used as a way to convey information by converting the
+           information to an XML file which can be easily read by a computer. The information contained within an RSS file
+           is gathered by an RSS Reader (This site for example) and it converts the information into an easy to read format.
+           RSS feeds allow you the ability to personalize your own news feeds to gather information from sources that you care
+           about. This web app does not include any ads or popups so the only content you see is the content you choose.</p>
+      <h4>Things to Note:</h4>
+      <p> This application is programmed to parse the XML data from given feeds and display the data in a nice human friendly way.
+      Different RSS feeds use different tags and different formats to organize their data. This program should be able to nicely parse data from
+      a few different formats however some feeds that you add to your list may not display with pictures or have weird descriptions. This will be due
+      to a different format that the program reads differently. This maybe fixed in the future depending on the popularity of the app. If you input a feed address into the app and it does
+      not get added to your list, it will be because the address through an error which is preventing you from adding it.</p>
+    </div>
+
+    <div id="programs">
+      <h4 class="program-title">How to Use This App</h4>
+      <div class="row">
+        <div class="card col-lg-3 col-md-3 col-sm-8">
+          <img src="/static/register.png" class="card-img-top" alt="registration page" style="margin-top: 3%;">
+          <div class="card-body">
+            <h5 class="card-title">Step 1- Register for an Account</h5>
+            <p class="card-text">If you do not already have an account click the Register button to sign up for one. It is completely free.</p>
+            <a href="/register">
+                <button class="registration" type="submit">Register</button>
+            </a>
+          </div>
+        </div>
+        <div class="card col-lg-3 col-md-3 col-sm-8">
+          <img src="/static/login.png" class="card-img-top" alt="login page" style="margin-top: 3%;">
+          <div class="card-body">
+            <h5 class="card-title">Step 2- Login</h5>
+              <p class="card-text">Login to your account once you have registered!</p>
+              <a href="/login">
+                <button class="login-alt" type="submit">Login</button>
+              </a>
+        </div>
+        </div>
+        <div class="card col-lg-3 col-md-3 col-sm-8">
+          <img src="/static/submit_bar.png" class="card-img-top" alt="Submit Bar">
+          <div class="card-body">
+            <h5 class="card-title">Step 3- Find the web address of your favorite RSS feeds</h5>
+            <p class="card-text">Once you have logged you will be able to add some RSS feeds to you account. To do this find the web address
+            of the feeds you want to add. (See how to find RSS feeds section to see how to do this). Once you have the address simply copy and paste it
+            into the add feed field on the main screen. Assuming there are no mistakes your feeds should update with articles from the newly added feed.</p>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="card col-lg-10 col-md-10 col-sm-8" style="margin-top: 5%;">
+          <img src="/static/main_snapshot.png" class="card-img-top" alt="Main Screen Snapshot">
+          <div class="card-body">
+            <h5 class="card-title">Useful Feature:</h5>
+            <p class="card-text">By default this application will show articles from all of the feeds you have added. If you only
+            want to read articles from specific sources then select the feed on the left sidebar to display only articles from that specific source. If
+            you want to delete a feed from your  news list click the 'X' symbol beside the feed you wish to delete.
+            Note: This feature is not yet available for certain mobile devices.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+<!--
+    <div class="row" id="contact-region">
+
+      <div class="location col-lg-2 col-sm-2">
+        <h4>Where to Find Us</h4>
+        <p>1234 Fake Address Lane</p>
+        <p>City, Somewhere</p>
+        <p>Tel: 123-456-7891</p>
+        <p>Email: nobody@nowhere.com</p>
+      </div>
+
+      <div class="contact col-lg-8 col-sm-8" id="contact">
+        <h4>Contact Us</h4>
+        <p>If you have any questions or would like to get a hold of us call us at the number below or fill out the form and we will contact you as soon as we can.</p>
+        <form>
+          <input autocomplete="off" autocorrect type="text" class="form-field" placeholder="Name"><br><br>
+          <input autocomplete="off" autocorrect type="text" class="form-field" placeholder="Email"><br><br>
+          <input autocomplete="off" autocorrect type="number" class="form-field" placeholder="Phone Number"><br><br>
+          <textarea placeholder="Comments or Questions" class="comments"></textarea><br><br>
+          <button class="btn btn-primary" type="submit">Submit</button>
+        </form>
+      </div>
+    </div>-->
+    <div class="footer">
+        <h6 style="color: white;">Home Page Background Picture Credit:</h6>
+        <a style="background-color:white;color:black;text-decoration:none;padding:4px 6px;
+        font-family:-apple-system, BlinkMacSystemFont, &quot;San Francisco&quot;, &quot;Helvetica Neue&quot;, Helvetica, Ubuntu,
+        Roboto, Noto, &quot;Segoe UI&quot;, Arial, sans-serif;font-size:12px;font-weight:bold;line-height:1.2;display:inline-block;
+        border-radius:3px;" href="https://unsplash.com/@redaquamedia?utm_medium=referral&amp;utm_campaign=photographer-credit&amp;utm_content=creditBadge"
+        target="_blank" rel="noopener noreferrer" title="Download free do whatever you want high-resolution photos from Denny Müller">
+            <span style="display:inline-block;padding:2px 3px"><svg xmlns="http://www.w3.org/2000/svg"
+            style="height:12px;width:auto;position:relative;vertical-align:middle;top:-2px;fill:black;" viewBox="0 0 32 32">
+            <title>unsplash-logo</title><path d="M10 9V0h12v9H10zm12 5h10v18H0V14h10v9h12v-9z"></path></svg></span>
+            <span style="display:inline-block;padding:2px 3px">Denny Müller</span>
+        </a>
+
+        <h6 style="color: white;">How To Background Picture Credit:</h6>
+        <a style="background-color:white;color:black;text-decoration:none;padding:4px 6px;font-family:-apple-system, BlinkMacSystemFont, &quot;San Francisco&quot;,
+        &quot;Helvetica Neue&quot;, Helvetica, Ubuntu, Roboto, Noto, &quot;Segoe UI&quot;, Arial, sans-serif;font-size:12px;font-weight:bold;
+        line-height:1.2;display:inline-block;border-radius:3px" href="https://unsplash.com/@juliusdrost?utm_medium=referral&amp;utm_campaign=photographer-credit&amp;utm_content=creditBadge"
+        target="_blank" rel="noopener noreferrer" title="Download free do whatever you want high-resolution photos from Julius Drost">
+        <span style="display:inline-block;padding:2px 3px"><svg xmlns="http://www.w3.org/2000/svg" style="height:12px;width:auto;position:relative;
+        vertical-align:middle;top:-2px;fill:black" viewBox="0 0 32 32"><title>unsplash-logo</title>
+        <path d="M10 9V0h12v9H10zm12 5h10v18H0V14h10v9h12v-9z"></path></svg></span><span style="display:inline-block;padding:2px 3px">Julius Drost</span>
+        </a>
+    </div>
+
+
+</body>
+
+<script>
+    document.addEventListener('DOMContentLoaded', function(){
+        document.querySelector('.login').onmouseover=function(){
+            var element=document.getElementById('login');
+            element.style.backgroundColor='white';
+        }
+
+        document.querySelector('.login').onmouseout=function(){
+            var element=document.getElementById('login');
+            element.style.background='rgba(0,0,0, 0.1)';
+        }
+
+        document.querySelector('.register').onmouseover=function(){
+            var element= document.getElementById('register');
+            element.style.backgroundColor='white';
+        }
+
+        document.querySelector('.register').onmouseout=function(){
+            var element=document.getElementById('register');
+            element.style.background='rgba(0,0,0,0.1)';
+        }
+    });
+</script>
+</html>
